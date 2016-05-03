@@ -7,10 +7,20 @@ public class codes {
 	private String strafterdate ="</span></div>";
 	private String strhead="";
 	private String strbody = "";
-	private String picadd="<img src=\"https://mail.tongji.edu.cn/coremail/s?func=mbox:getMessageData&sid=CAHMcBOOgezosScPYeOOekDlaitfsbCb&mid=1:1tbiAQAAD1H6Mp1ZuwAAso&part=3\">";
-	                               // https://mail.tongji.edu.cn/coremail/s?func=mbox:getMessageData&sid=CAHMcBOOgezosScPYeOOekDlaitfsbCb&mid=1:1tbiAQAAD1H6Mp1ZuwAAso&part=3
-	private String lastpart="<div class=\"bz\">    <ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <li>请到<font color=\"#ff0000\"><a href=\"mailto:civiledu@163.com\" target=\"_blank\">civiledu@163.com</a></font>（密码<font color=\"#ff0000\">tm65982402</font>）查看土木工程学院教学文件。</li></ul><p><br></p><ul>    <li> 如有任何教学问题，联系学院教务科65982402.</li>    </ul></div>";
+	private String email="";
+	private String password="";
+	
+	private String picadd="<img src=\"https://mail.tongji.edu.cn/coremail/XT3/nf/doGetFile.jsp?mid=1%3a1tbiAQADBFH6MpeiSgADsj&sid=CAivcBOOmaRisSKqjeOODUwfYNnpdmgb>";
+	                   
+	private String lastpart="<div class=\"bz\">    <ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <li>请到<font color=\"#ff0000\"><a href=\"mailto:"+email+"\" target=\"_blank\">"+email+"</a></font>（密码<font color=\"#ff0000\">"+password+"</font>）查看土木工程学院教学文件。</li></ul><p><br></p><ul>    <li> 如有任何教学问题，联系学院教务科65982402.</li>    </ul></div>";
 	private String page;
+	
+	public void setemail(String str){
+		email = str;
+	}
+	public void setpassword(String str){
+		password = str;
+	}
 	
 	public void setpicadd(String str){
 		picadd = "<img src=\""+str+"\">";
