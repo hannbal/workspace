@@ -164,12 +164,50 @@ else
 }
 echo "<br>";
 #数组
+#普通遍历
+$cars = array("Volvo","BMW","Toyota");
+$arrlength=count($cars);
+for($x=0;$x<$arrlength;$x++)
+{
+    echo $cars[$x];
+    echo "<br>";
+}
 #特殊的关联数组
 $age = array("peter"=>"35","ben"=>"37","joe"=>"43");
 #特殊遍历
 foreach($age as $x=>$x_value)
 {
     echo "Key=" . $x .",Value=" . $x_value;
+    echo "<br>";
+}
+
+#排序
+
+sort($cars);
+foreach($cars as $x)
+{
+    echo $x;
+    echo "<br>";
+}
+
+rsort($cars);
+foreach($cars as $x)
+{
+    echo $x;
+    echo "<br>";
+}
+#按值降序
+arsort($age);
+foreach($age as $x=>$x_value)
+{
+    echo"Key=".$x.",Vaule=".$x_value;
+    echo "<br>";
+}
+#按键值升序
+ksort($age);
+foreach($age as $x=>$x_value)
+{
+    echo "Key=".$x.",Vaule=".$x_value;
     echo "<br>";
 }
 
